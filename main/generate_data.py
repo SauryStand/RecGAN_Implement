@@ -8,13 +8,13 @@ import os
 import sys
 
 sys.path.append('../IRecGAN')
-from utils import get_args, get_optimizer
+from util import get_args, get_optimizer
 
 
 if __name__ == '__main__':
     global device
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    outputdir = "model_output"
+    outputdir = "output"
     # Define the environment
     num_clicks = 100
     recom_number = 20
